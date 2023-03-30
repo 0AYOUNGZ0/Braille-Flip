@@ -1,0 +1,124 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape">
+
+    <!-- Edit Text at the top -->
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Type Here" />
+
+    <!--Row 1 -->
+    <RelativeLayout
+        android:id="@+id/row1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/row2_layout"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <!-- Status: Connected Button -->
+        <Button
+            android:id="@+id/status_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:height="150dp"
+            android:background="@color/pink"
+            android:padding="10dp"
+            android:text="Status: \nConnected"
+            android:textColor="@color/semi_black"
+            android:textSize="25sp" />
+
+        <!-- Settings Button -->
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:height="150dp"
+            android:background="@color/blue_200"
+            android:padding="10dp"
+            android:text="Settings"
+            android:textColor="@color/semi_black"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+    <!-- Row 2 -->
+    <GridLayout
+        android:id="@+id/row2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:rowCount="1"
+        android:columnCount="4"
+        >
+
+        <!-- Next Line Button -->
+        <Button
+            android:id="@+id/next_line_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:height="150dp"
+            android:text="Next Line"
+            android:textSize="25sp"
+            android:textColor="@color/semi_black"
+            android:background="@color/pink"
+            />
+
+        <!-- Copy All Button -->
+        <Button
+            android:id="@+id/copy_all_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Copy All"
+            android:height="150dp"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textColor="@color/semi_black"
+            android:background="@color/purple_200"
+            />
+
+        <!-- Clear All Button -->
+        <Button
+            android:id="@+id/clear_all_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Clear All"
+            android:height="150dp"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textColor="@color/semi_black"
+            android:background="@color/purple_200"
+            />
+
+        <!-- Read All Button -->
+        <Button
+            android:id="@+id/read_all_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Read All"
+            android:height="150dp"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textColor="@color/semi_black"
+            android:background="@color/blue_200"
+            />
+
+    </GridLayout>
+
+</RelativeLayout>
