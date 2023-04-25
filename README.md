@@ -1,4 +1,3 @@
-```markdown
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/webianks/BlueChat/blob/master/LICENSE)
 
@@ -69,6 +68,7 @@
         └── data_extraction_rules.xml
 ```
 
+```
 ## License
 
 This project is licensed under the MIT License.
