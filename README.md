@@ -7,17 +7,28 @@
 
 ## Screenshots & Illustrations
 
-    <img src="images/Braille Alphabet.jpeg" alt="Braille Alphabet" width="400"/>
+<img src="images/Braille Alphabet.jpeg" alt="Braille Alphabet" width="600"/>
+
 > _Braille Alphabet_
 
-    <img src="images/Primary Phone.jpeg" alt="Primary Phone" width="400"/>
+
+
+<img src="images/Primary Phone.jpeg" alt="Primary Phone" width="600"/>
+
 > _Primary Phone_
 
-    <img src="images/Secondary Phone.jpeg" alt="Secondary Phone" width="400"/>
+
+
+<img src="images/Secondary Phone.jpeg" alt="Secondary Phone" width="600"/>
+
 > _Secondary Phone_
 
-    <img src="images/Gesutre.jpg" alt="Gesutre Illustration" width="400"/>
+
+
+<img src="images/Gesutre.jpg" alt="Gesutre Illustration" width="600"/>
+
 > _Gesture Illustration_
+
 
 ## Project Structure
 
