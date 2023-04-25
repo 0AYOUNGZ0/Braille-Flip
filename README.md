@@ -5,9 +5,19 @@
 
 **BrailleFlip** is a low-budget, hybrid system designed for mobile Braille input and editing. In this project, we attach a secondary phone to the back of the primary phone using hook-and-loop fasteners and utilize the screen areas of the secondary phone as a touchpad for Braille code input. The screen of the primary phone is used for Braille editing, such as selecting, copying, and pasting, and quick actions like copying all text and clear all text. To activate edit mode on the primary phone, the user can perform a long press on the "EDIT" button. In this mode, the user can utilize various gestures to perform text-editing operations.
 
-## Screenshots
+## Screenshots & Illustrations
 
-> _Add your screenshots here._
+    <img src="images/Braille Alphabet.jpeg" alt="Braille Alphabet" width="400"/>
+> _Braille Alphabet_
+
+    <img src="images/Primary Phone.jpeg" alt="Primary Phone" width="400"/>
+> _Primary Phone_
+
+    <img src="images/Secondary Phone.jpeg" alt="Secondary Phone" width="400"/>
+> _Secondary Phone_
+
+    <img src="images/Gesutre.jpg" alt="Gesutre Illustration" width="400"/>
+> _Gesture Illustration_
 
 ## Project Structure
 
