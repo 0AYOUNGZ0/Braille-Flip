@@ -1,151 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<TextView
-    android:id="@+id/tv_input"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:textSize="30sp"
-    android:padding="10dp"
-    android:textColor="@android:color/black"/>
-
-<GridLayout
-    android:layout_below="@id/tv_input"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:rowCount="3"
-    android:columnCount="4"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
-    android:alignmentMode="alignMargins"
-    android:useDefaultMargins="true">
+    android:orientation="vertical"
+    >
 
-    <Button
-        android:id="@+id/btn_edit"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_row="0"
-        android:layout_rowSpan="3"
-        android:layout_rowWeight="1"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:layout_marginRight="30dp"
-        android:background="@color/pink"
-        android:onClick="onClick"
-        android:text="Edit"
-        android:textColor="@color/semi_black"
-        android:textSize="30sp" />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="140dp">
 
-    <Button
-        android:id="@+id/btn_1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="1"
-        android:textSize="30sp"
-        android:onClick="onClick"
-        android:background="@color/purple_200"
-        android:textColor="@color/semi_black"
+        <Button
+                android:id="@+id/send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Secondary Phone"
+        />
+        <Button
+                android:id="@+id/show"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Primary phone"
         />
 
-    <Button
-        android:id="@+id/btn_4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="4"
-        android:textSize="30sp"
-        android:onClick="onClick"
-        android:background="@color/purple_200"
-        android:textColor="@color/semi_black"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <EditText
+            android:id="@+id/et_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Devices"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
         />
-
-    <Button
-        android:id="@+id/btn_space"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="2"
-        android:layout_columnWeight="1"
-        android:text="Space"
-        android:layout_marginLeft="30dp"
-        android:layout_rowSpan="2"
-        android:textSize="30sp"
-        android:onClick="onClick"
-        android:background="@color/blue_200"
-        android:textColor="@color/semi_black"
-        />
-
-    <Button
-        android:id="@+id/btn_2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="2"
-        android:textSize="30sp"
-        android:onClick="onClick"
-        android:background="@color/purple_200"
-        android:textColor="@color/semi_black"
-        />
-
-    <Button
-        android:id="@+id/btn_5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="5"
-        android:textSize="30sp"
-        android:onClick="onClick"
-        android:background="@color/purple_200"
-        android:textColor="@color/semi_black"
-        />
-
-    <Button
-        android:id="@+id/btn_3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="3"
-        android:textSize="30sp"
-        android:onClick="onClick"
-        android:background="@color/purple_200"
-        android:textColor="@color/semi_black"
-        />
-
-    <Button
-        android:id="@+id/btn_6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="6"
-        android:textSize="30sp"
-        android:onClick="onClick"
-        android:background="@color/purple_200"
-        android:textColor="@color/semi_black"
-        />
-
-    <Button
-        android:id="@+id/btn_delete"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="Delete"
-        android:layout_marginLeft="30dp"
-        android:textSize="30sp"
-        android:onClick="onClick"
-        android:background="@color/blue_200"
-        android:textColor="@color/semi_black"
-        />
-
-</GridLayout>
-
-</RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
