@@ -89,8 +89,10 @@
         └── data_extraction_rules.xml
 ```
 
+## Screenshots & Illustrations
+
 ```
-## MIT License
+MIT License
 
 Copyright (c) 2017 Ramankit Singh
 
